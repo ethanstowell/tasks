@@ -146,7 +146,7 @@ export function publishAll(questions: Question[]): Question[] {
  */
 export function sameType(questions: Question[]): boolean {
     return questions.every(
-        (question: Question): boolean => question.type === questions[0].type,
+        (question: Question): boolean => question.type === questions[0]?.type,
     );
 }
 
